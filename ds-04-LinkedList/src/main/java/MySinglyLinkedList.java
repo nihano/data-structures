@@ -21,47 +21,58 @@ public class MySinglyLinkedList {
 
     }
 
-    void deleteById(int id){
+    void deleteById(int id) {
         //check if empty
         if (isEmpty()) System.out.println("List is empty!!!");
         //assign previous and current with the head
-        Node prev=head;
-        Node current=head;
-        while (current!=null){
-            if (current.id==id){ //if there is a match
+        Node prev = head;
+        Node current = head;
+        while (current != null) {
+            if (current.id == id) { //if there is a match
                 //case 1: head
-                if (current==head){
-                    head=current.next;
-                    current.next=null;
+                if (current == head) {
+                    head = current.next;
+                    current.next = null;
                 }
                 //case 2: tail
-                else if(current==tail){
-                    tail=prev;
-                    prev.next=null; //Ex tail will be eligible for garbage collection
+                else if (current == tail) {
+                    tail = prev;
+                    prev.next = null; //Ex tail will be eligible for garbage collection
                 }
                 //case3: middle
-                else{
-                    prev.next=current.next;
-                    current.next=null; //Current will be eligible for garbage collection
+                else {
+                    prev.next = current.next;
+                    current.next = null; //Current will be eligible for garbage collection
                 }
                 //after deletion
                 size--;
             }
             //move forward on the elements of the list
-            prev=current;
-            current=current.next;
+            prev = current;
+            current = current.next;
         }
-
-
 
     }
 
-    void printNodes(){
-        Node current=head;
-        while (current!=null){
-            if (current.next==null){
+    int indexOf(int id) {
+        if (isEmpty()) return -1;
+        int pos = 0; //position
+        //iterate through the list
+        Node current = head; //set my current with the starting element
+        while (current != null) {
+            if (current.id == id)  return pos;
+                pos++;
+                current = current.next;
+        }
+        return -1;
+    }
+
+    void printNodes() {
+        Node current = head;
+        while (current != null) {
+            if (current.next == null) {
                 System.out.println(current.id + "=>null");
-            }else {
+            } else {
                 System.out.print(current.id + "=>");
             }
             current = current.next;
