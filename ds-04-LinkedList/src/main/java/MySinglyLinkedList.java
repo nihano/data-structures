@@ -18,7 +18,20 @@ public class MySinglyLinkedList {
             tail = node;
             size++;
         }
+    }
 
+    void addFirst(int data) {
+        //create new Node obj from data
+        Node node = new Node(data);
+        //case 1: list is empty
+        if (isEmpty()) {
+            head=tail=node;
+        }else { //case 2: if the list is not empty
+            node.next=head;
+            head=node;
+        }
+        //increase size
+        size++;
     }
 
     void deleteById(int id) {
@@ -60,9 +73,9 @@ public class MySinglyLinkedList {
         //iterate through the list
         Node current = head; //set my current with the starting element
         while (current != null) {
-            if (current.id == id)  return pos;
-                pos++;
-                current = current.next;
+            if (current.id == id) return pos;
+            pos++;
+            current = current.next;
         }
         return -1;
     }
