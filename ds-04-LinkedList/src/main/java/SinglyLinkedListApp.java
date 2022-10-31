@@ -16,6 +16,8 @@ public class SinglyLinkedListApp {
         System.out.println("index of 0: "+myList.indexOf(0));
         myList.addFirst(39);
         myList.printNodes();
+        System.out.println(myList.getKthItemFromLast(3));
+
 
     }
 
