@@ -13,6 +13,7 @@
         <module>ds-02-arrays</module>
         <module>ds-03-collections-review</module>
         <module>ds-04-LinkedList</module>
+        <module>ds-05-Stacks</module>
     </modules>
 
     <properties>
