@@ -3,8 +3,8 @@ import java.util.Arrays;
 
 public class SunsetTrialWithArray {
     public static void main(String[] args) {
-        int[] buildings = new int[]{3, 5, 4, 4, 3, 1, 3, 2};
-        System.out.println(sunsetViews(buildings, "eaSt"));
+        int[] buildings = new int[]{3, 5, 4, 4, 3, 1, 3, 2, 7, 8, 5};
+        System.out.println(sunsetViews(buildings, "east"));
     }
 
     //NOT AN OPTIMUM SOLUTION - JUST TRYING
@@ -13,7 +13,7 @@ public class SunsetTrialWithArray {
         int[] newBuildings = new int[buildings.length];
         if (direction.equalsIgnoreCase("east")) {
             newBuildings = buildings;
-        } else {
+        } else if(direction.equalsIgnoreCase("west")) {
             int j=0;
             for (int i = buildings.length-1; i >=0; i--) {
                 newBuildings[j]=buildings[i];
