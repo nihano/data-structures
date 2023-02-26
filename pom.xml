@@ -14,6 +14,8 @@
         <module>ds-03-collections-review</module>
         <module>ds-04-LinkedList</module>
         <module>ds-05-Stacks</module>
+        <module>ds-07-queues</module>
+        <module>ds-08-trees</module>
     </modules>
 
     <properties>
