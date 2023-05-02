@@ -16,6 +16,7 @@
         <module>ds-05-Stacks</module>
         <module>ds-07-queues</module>
         <module>ds-08-trees</module>
+        <module>ds-06-algorithm-problems</module>
     </modules>
 
     <properties>
