@@ -1,3 +1,5 @@
+package printMiddleNode;
+
 public class MySinglyLinkedList {
     Node head;
     Node tail;
@@ -21,7 +23,7 @@ public class MySinglyLinkedList {
     }
 
     void addFirst(int data) {
-        //create new Node obj from data
+        //create new printMiddleNode.Node obj from data
         Node node = new Node(data);
         //case 1: list is empty
         if (isEmpty()) {

@@ -1,3 +1,7 @@
+package printMiddleNode;
+
+import printMiddleNode.MySinglyLinkedList;
+
 public class PrintMiddleLL {
     public static void main(String[] args) {
         MySinglyLinkedList sll=new MySinglyLinkedList();
