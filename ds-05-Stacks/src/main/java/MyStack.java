@@ -6,7 +6,8 @@ public class MyStack<T>{
     public SNode<T> top; //tail
     int size;
     public boolean isEmpty(){
-        return bottom==null; //return true if the bottom is null
+        return bottom==null;
+        //return true if the bottom is null
     }
 
     public void push(T item){
