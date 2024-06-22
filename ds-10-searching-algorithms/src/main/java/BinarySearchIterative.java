@@ -5,7 +5,7 @@ public class BinarySearchIterative {
         int right = arr.length-1;
 
         while (left<right){
-            int middle = (right-left)/2;
+            int middle = (right+left)/2;
             if (arr[middle]==data){
                 return middle;
             }else if (data<arr[middle]){
