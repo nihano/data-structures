@@ -4,7 +4,7 @@ public class BinarySearchIterative {
         int left = 0;
         int right = arr.length-1;
 
-        while (left<right){
+        while (left<=right){
             int middle = (right+left)/2;
             if (arr[middle]==data){
                 return middle;
@@ -19,8 +19,8 @@ public class BinarySearchIterative {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,5,10,18,21,30};
-        System.out.println(binarySearchIterative(arr, 10));
+        int[] arr = {1,2,5,10,18,21};
+        System.out.println(binarySearchIterative(arr, 21));
     }
 
 
