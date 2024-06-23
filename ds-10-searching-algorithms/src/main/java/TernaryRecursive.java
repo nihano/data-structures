@@ -21,6 +21,6 @@ public class TernaryRecursive {
 
     public static void main(String[] args) {
         int[] arr = {1,2,5,10,18,21,30};
-        System.out.println(ternaryRecursive(arr, 10,0, arr.length-1));
+        System.out.println(ternaryRecursive(arr, 30,0, arr.length-1));
     }
 }
