@@ -25,5 +25,9 @@ public class TernarySearchIterative {
 
     }
 
+    public static void main(String[] args) {
+        int[] arr = {1,2,5,10,18,21,30};
+        System.out.println(ternarySearchIterative(arr, 30));
+    }
 
 }
