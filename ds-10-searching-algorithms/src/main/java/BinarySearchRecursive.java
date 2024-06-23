@@ -14,6 +14,6 @@ public class BinarySearchRecursive {
 
     public static void main(String[] args) {
         int[] arr = {3,7,10,11,34,56};
-        System.out.println(binarySearchRecursive(arr, 11, 0, arr.length - 1));
+        System.out.println(binarySearchRecursive(arr, 56, 0, arr.length - 1));
     }
 }
